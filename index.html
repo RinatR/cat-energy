@@ -79,20 +79,25 @@
           <h3 class="section-title">Живой пример</h3>
           <p class="example__text normal-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
           <div class="example-results">
-            <div class="example-results__item">5 кг</div>
-            <div class="example-results__item">60 дней</div>
-            <p class="example-results__money-spent">Затраты на питание: 15 000 руб.</p>
+            <div class="example-results__list">
+              <div class="example-results__item">5 кг</div>
+              <div class="example-results__item">60 дней</div>
+              <p class="example-results__item">Затраты на питание: 15 000 руб.</p>
+            </div>
             <div class="before-after">
-              <img class="before-after__image" src="img/before-mobile.png" alt="До/После" width="311" height="232">
-              <div class="before-after__scale">
-                <div class="before-after__scale-label">
+              <picture class="before-after__image">
+                <source media="(min-width: 768px)" srcset="img/before-after-tablet.png">
+                <img src="img/before-after-mobile.png" alt="До/После">
+              </picture>
+              <div class="before-after__slider">
+                <div class="before-after__slider-label">
                   <input type="radio" id="before" name="toggle">
                   <label for="before">Было</label>
                 </div>
-                <div class="before-after__toggle">
-                  <div class="before-after__control"></div>
+                <div class="before-after__scale">
+                  <div class="before-after__toggle"></div>
                 </div>
-                <div class="before-after__scale-label">
+                <div class="before-after__slider-label">
                   <input type="radio" id="after" name="toggle">
                   <label for="after">Стало</label>
                 </div>
