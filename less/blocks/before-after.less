@@ -1,5 +1,11 @@
+
 .before-after__image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 35px;
+
 }
 
 .before-after__slider {
@@ -45,6 +51,12 @@
 
 
 @media @tablet-width {
+
+  .before-after__image {
+    img {
+      width: 677px;
+    }
+  }
   .before-after__scale {
     position: relative;
     width: 428px;
