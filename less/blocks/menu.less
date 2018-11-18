@@ -117,5 +117,42 @@
   }
 }
 
+@media @desktop-width {
+  .menu {
+    position: relative;
+    justify-content: flex-end;
+    padding: 0;
+
+    &:before {
+      position: absolute;
+      right: -110px;
+      top: 0;
+      width: 680px;
+      height: 696px;
+      background-image: url("../img/intro-bg-desktop.jpg");
+      background-position: 100% 0;
+      background-repeat: no-repeat;
+      content: "";
+      z-index: -1;
+    }
+  }
+
+  .menu__item {
+    margin-left: 37px;
+    background-color: transparent;
+
+    &:first-child {
+      margin-right: auto;
+    }
+  }
+
+  .menu__link {
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+
+  }
+}
+
 
 

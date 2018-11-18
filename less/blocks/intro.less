@@ -27,7 +27,7 @@
 @media @tablet-width {
   .intro {
     min-height: 800px;
-    background-image: url("../img/index-can-tablet-jpg.png");
+    background-image: url("../img/index-can-tablet.png");
     background-position: center 220px;
     background-repeat: no-repeat;
     background-size: 709px 609px;
@@ -40,7 +40,7 @@
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
-    color: @text-color-base;
+    color: @text-color-second;
     text-align: left;
 
     &--subtitle {
@@ -48,6 +48,23 @@
       margin-left: 90px;
       font-size: 20px;
       line-height: 20px;
+    }
+  }
+}
+
+@media @desktop-width {
+  .intro {
+    position: relative;
+    min-height: 680px;
+    background-image: url("../img/index-can-desktop.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 552px 499px;
+  }
+
+  .intro__title {
+    &--subtitle {
+      margin-bottom: 53px;
     }
   }
 }
