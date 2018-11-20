@@ -35,8 +35,8 @@
         <div class="layout-center">
           <div class="categories-item">
             <header class="categories-item__header">
-              <div class="categories-item__icon">
-                <img src="img/categories-1.svg" alt="Похудение" width="35" height="49">
+              <div class="categories-item__icon categories-item__icon--slim">
+                <svg width="35" height="49"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-category1"></use></svg>
               </div>
               <h3 class="categories-item__title">Похудение</h3>
             </header>
@@ -44,13 +44,16 @@
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
             <footer class="categories-item__footer">
-              <a href="catalog.html">Каталог Slim</a>
+              <a href="catalog.html">Каталог Slim
+                <svg width="24" height="11"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use></svg>
+              </a>
+
             </footer>
           </div>
           <div class="categories-item">
             <header class="categories-item__header">
-              <div class="categories-item__icon">
-                <img src="img/categories-2.svg" alt="Набор массы" width="67" height="28">
+              <div class="categories-item__icon categories-item__icon--gain">
+                <svg  width="67" height="28"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-category2"></use></svg>
               </div>
               <h3 class="categories-item__title">Набор массы</h3>
             </header>
@@ -58,7 +61,9 @@
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
             <footer class="categories-item__footer">
-              <a href="catalog.html">Каталог Pro</a>
+              <a href="catalog.html">Каталог Pro
+                <svg width="24" height="11"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use></svg>
+              </a>
             </footer>
           </div>
         </div>
@@ -67,22 +72,40 @@
         <div class="layout-center">
           <h3 class="section-title">Как это работает</h3>
           <ul class="advantages-list">
-            <li class="advantages-list__item normal-text">Функциональное питание содержит только полезные питательные вещества.</li>
-            <li class="advantages-list__item normal-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-            <li class="advantages-list__item normal-text">Замените один-два приема обычной еды на наше фунцкциональное питание.</li>
-            <li class="advantages-list__item normal-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+            <li class="advantages-list__item normal-text">Функциональное питание содержит только полезные питательные вещества.
+              <div class="advantages-list__item-icon">
+                <svg width="26" height="29"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-advantage1"></use></svg>
+              </div>
+            </li>
+            <li class="advantages-list__item normal-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+              <div class="advantages-list__item-icon">
+                <svg width="29" height="31"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-advantage2"></use></svg>
+              </div>
+            </li>
+            <li class="advantages-list__item normal-text">Замените один-два приема обычной еды на наше фунцкциональное питание.
+              <div class="advantages-list__item-icon">
+                <svg width="23" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-advantage3"></use></svg>
+              </div>
+            </li>
+            <li class="advantages-list__item normal-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            <div class="advantages-list__item-icon">
+                <svg width="26" height="29"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-advantage1"></use></svg>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
       <section class="example">
         <div class="layout-center">
           <h3 class="section-title">Живой пример</h3>
-          <p class="example__text normal-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <div class="example-results">
-            <div class="example-results__list">
-              <div class="example-results__item">5 кг</div>
-              <div class="example-results__item">60 дней</div>
-              <p class="example-results__item">Затраты на питание: 15 000 руб.</p>
+          <div class="example__inner">
+            <div class="example-results">
+              <p class="example-results__text normal-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </p>
+              <div class="example-results__list">
+                <div class="example-results__item">5 кг</div>
+                <div class="example-results__item">60 дней</div>
+              </div>
             </div>
             <div class="before-after">
               <picture class="before-after__image">
@@ -135,6 +158,27 @@
     </symbol>
     <symbol id="icon-close" width="18" height="18" viewBox="0 0 18 18">
       <g><g transform="translate(-279 -23)"><image width="18" height="18" transform="translate(279 23)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAnUlEQVQ4T7XUsQ3CMBAF0JcJ2IaKmgqxDVOwDhUtVGzDBuiKSJHxOTYK7nJKXpz7zk0444IT3sbWDjdcJzxwwAvHASyQO/Z4BrQs9GJfzwQUawSr3jtDvVj6wiW0hjV3XUIZFvW5sdU+1qAaFrVIJw0jg0osrpuJ/h0qG/vTp9XSGW52K+Lu+HtO9+qB7EHmuZD+IiNIim06RjYZbB9f6VZTRPtDJgAAAABJRU5ErkJggg=="/></g></g>
+    </symbol>
+    <symbol id="icon-category1" width="70" height="97" viewBox="0 0 70 97">
+      <g><g transform="translate(-176 -817)"><image width="70" height="97" transform="translate(176 817)" xlink:href="data:image/png;base64,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"/></g></g>
+    </symbol>
+    <symbol id="icon-category2" width="134" height="56" viewBox="0 0 134 56">
+      <g><g transform="translate(-794 -845)"><image width="134" height="56" transform="translate(794 845)" xlink:href="data:image/png;base64,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"/></g></g>
+    </symbol>
+    <symbol id="icon-arrow-right" width="24" height="11" viewBox="0 0 24 11">
+      <g><g transform="translate(-294 -1070)"><image width="24" height="11" transform="translate(294 1070)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAALCAYAAABlNU3NAAAAi0lEQVQ4T2NkoAKwc3Kq+M/AsO/wvn2n0I1jpIL5DHZOThMYGBjS/zMyJh7eu3cFspnUtCAfanDjoX37GhkYGP6D+LSwAGToil/fvycdP378O6Odo+MCioOJkdGMgYFBE82ck0z//gUw2jk5gb1CI3CUlj44xfTvnz/t44AaQQNNpjRPRTTNBzhzMgCIZ0JCA8r/kgAAAABJRU5ErkJggg=="/></g></g>
+    </symbol>
+    <symbol id="icon-advantage1" width="26" height="29" viewBox="0 0 26 29">
+    <g><g transform="translate(-137 -1379)"><image width="26" height="29" transform="translate(137 1379)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAADvklEQVRIS62WaajmYxjGf5d9nxpkpzCTTLIMJiZmGllTMpkUsg0+iFImPmlkKwplPtgKGVIMQ8yHYWTIPky2LBNhTJbsO1kuXaf7//qf97znvO8bd711Ov/nua/nua/rvu5H/IewvRVwWP32BiYDm9VvY2DDSr9Ww+DYTpITgdOAXYCtgW2B9fvkWTcQkO1DgcuBvYAdeyT+Ffge+Bn4Efi71uZgXwELJwSyfThwIzAF2LJ16q+BL4CPgGeB5cAaST9lje3bgHOBP4ErJF3ZE6hqfw8QoEkF8APwMfAQcIektb3KZXsD4F1gD+BNYF9JHgNke59Ktmcl+hZ4HVgg6dV+nNo+FnikhHCppOuyZxSQ7YOAh4uH1Dknmy/pxX4AzXfb9wPzgM/Dk6Rw9y+Q7ajouVJTyH0MOFXSH4OCFD+rgAOB1ZKmN3tHbmSPlDBl2R/4DVgs6bxhAFo3+gDYHVgm6fhuoIuAa4GNgMclHT0O0ZsD9xXRcyW9115nexvg7eqtGyRd3AGq24SLqSXXqCQKGxW20/lLa12+RbYLu4CmAS8BOdBZku5qAx1TCTYBrpe0oAfILOBeYKf69g4wR1II74TtrFtZ/zhK0hNtoAeAk4DPSvNfdm0+skBiNeFvRVQlKX933zqcPAr8BcyUlNuNhGy/AkQdqyQd3AUS61kC7ACk6yOS88cTie144GIgqj1EUvqvA7SmLGa5pJRxJGwn+QvAbuVht7bJ7QVm+5IS1XdRsKRYVAfoE2Bn4G5JZxRI3Dg33a/8Kt/mj3eT1uFuAi6sZp0qKQbbAYp/7Qrc3vROmWISrwc8A8yOXw0AFP6OAN6XFCPuRDhqgJZImmd7RpqtZk2ab3pjIxMB2U4V0ibxyOclzewGilQzZ2L1xwGvATHWeFTU1ZFoH6CzgVvKTC+TdFU3UAwzt1hdXX91OcRSSXP7las43aIOmNEQzqe1+cmalO5BIAmzIAYan1oXIUjKgJswbMcFngLi/HH8RZJiaaMiQOdECKWukB+DjU+NcYjuzbbnADe3bClVmSEpk3UMUB4YbwHb15cP6+ppulFR0zNqOhk4oW6fl1AiOWZJ+qZXCZox0cyQrAmhFwBPAtvVppQkIzqPjSRukudzmjP+ltn1y3h1boCyMIYYv4viYrBv1Dut194Af5p+ATKuX+7HZTjatPSfpn1a0uxS0iLggHpa5UC/1y99F+NcISnPq4EiQLGdO2v16ZLy+vnfI0DNmIik85gY+JTDnCZAZwLXhFBJpwyzeZi1/wADHWk3H73bngAAAABJRU5ErkJggg=="/></g></g>
+    </symbol>
+    <symbol id="icon-advantage2" width="29" height="31" viewBox="0 0 29 31">
+      <g><g transform="translate(-460 -1377)"><image width="29" height="31" transform="translate(460 1377)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAADVklEQVRIS7WWWeiVVRTFfyuLLBrVsrTJMqdEHxxIworoISjpQRELEiU0MEQCpXpQtFCxsAkUoSwoooH0pSB6VRPNFJJsgsIB/TcZmQ1W2ool5x+X6x2+e9MD39N3zl5nn7X22ltUWLZnAo8CFwO/AW9IWlrhaMMtanfQ9hTgVeBs4BAwADgfWCHpyXbnG/2vAroVGAsskrTW9m3AO8BhSSPOFOinwHmSbugFsP0RcDVwvaQ/OgWukmkAhgNTJG2yPRjYDhyTNLRTwOyvAvpI+AOOAN8AV5VvvaQ5ZwQ0QW0/D0wD+hXwD4EZkv7uCtT2C8lY0vxWAWxfCITXA5IOdwNm+0XgH9lOGTi8Sfq1m2BVzti+CPjiZIK2vwVOADdJ+rlKgPo9tlNSef4ILusT4HVJe2sUfwmwB+jzv0Bt31NENgS4oO4ySeArYJ6knbYbgxan+V7S8Tb8RvVrgfuBPNsPwP4isnOKa12X+gZ+AtYBTzfK9HHguVIWd0v6rhFw4eZdYFJEAWwGZkk6WLvf9p0FaDQQlc8FVtU/74PhoZRFbh2/XdUrLtsx+9RlDt8IHAVekbSg2avYPgtYD9wBzAZeO4VT4HYgNXlNUXRElq4SdadkLgcSqAd4QlKerdJqymnUa7s/sAaYAFxWwBL4TyCX2FnE0fD5W2TdXr22+wDDgDFAX+DzAEpKeXW8WmZaU1fh7ZmSaXw2fHS92oLavhTYXYw9QMeAhyW93OL5UjrhOD02an1b0urK5mD7MWBlHcA2SSmTU5btTBUfl2bf+z8XXScpXSpNozWntpcAy+qib5d0cxPQh4pZxMdDyThgajGNEZJ+rwJ6JbALuKKA/AUslvRUE9C3gOnABknx4GT2WSYLYKKk3W1By6HxQDg5F9jYDLDsjcUtLDq4BRgFvBcjAEZL6qkE2olMbQ8qnOaFYofx3DT8LZImV+K0E8AadabjPAsMBEJHeue9vQ3/tGdaAxyLjKH8Iimi+m/Vg8ZHI/mRkn7sJssqZ2xnSM846zTxr4vBPyDpzSoButlj+77SufYF9H3gLmAfsBzY0U3QNmdSCYtLch8ENJP6JiCdPi0sTnK6V8oufGduvvXksG37WuAlIBN7OkrbIbzDWyWRL8uE0fMvs4q0aEMDVOkAAAAASUVORK5CYII="/></g></g>
+    </symbol>
+    <symbol id="icon-advantage3" width="23" height="30" viewBox="0 0 23 30">
+      <g><g transform="translate(-789 -1378)"><image width="23" height="30" transform="translate(789 1378)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAeCAYAAADHJYVoAAABvElEQVRIS+3Wz4vNURjH8ddHlpYsbFCssJCkTFmQjSImwk5SLPwBhsxuihR2FiwsZisUYcUChR1SQkN+Tn5thCZxdKZ7b3emZrp0bzZzVt/Fed7Pc57zeT7nm1LKCEaT9JVSluEWziQZKKUcxAA2JrlrilVKOY7dOFfjmttSShnFtySLSylbcRE3k6wvpZzHNhxIcnoa+A2sw1fsSHK97u02fAwjSZb2Av4Fv9GX5Fm3K/+IeRhMMtRt+DB24WGSVd2G78VRjCVZUOHvULAQmyap5Q7WYHuSCx2opR8nMAcrKvxJA3wYL5pw7ME9zMLKJG86hB/Bcmyp8J04i594jtV4W2WK+biapJ5oylVKaeq8Vl5npQ7UoQpQShnCfsxtI3zHA2xIUr87hS/CKQyPwxsJluAkNuN9TZbk8nTQttj2yn/gSm1pC95IMGH8OwE34trhT3Ebr3sBrwZX2/m5F/BreDluhu1Hn+yK/9KWJJdKKVW2v3oFf1Wl3G34YOMyq8fM7ja8vZMfug1/hE+NDPe7De+vF9p6Q3uhlhl40/Ra3jLT85bQ2l+i/9aWCT+if+GKx7APa5M8bsb9AfnAneT25ygIAAAAAElFTkSuQmCC"/></g></g>
+    </symbol>
+    <symbol id="icon-advantage4" width="26" height="31" viewBox="0 0 26 31">
+      <g><g transform="translate(-1112 -1378)"><image width="26" height="31" transform="translate(1112 1378)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAfCAYAAAD5h919AAAD7klEQVRIS8WWa+jecxjGP5dhSGG8cGyGvFkOY1LINltzmigrhDAmFntBzvYGjRGJKMdFW04RMWfiBSKxA28Um9NIc17I4tL1uH/r93/+v+f/b6Xcb57f8z3c1/e+7+t73V/RZ7afBk7sH9/E/yskHdjeo/8NqOvkticAhwP7AlcAWwJ3Au8Db0n6dLSIh0XUbLAdZ2cDFwJD0tDhdCVwN7BY0p9doJ1AtqcB9wF716Y/gDeBVcDaGtsV2A84Eti6xlYDcyW91g/WVaNrgOuBzK0BFgFLJK0fkNZtgTMqpXvWmgWSbhhIBtsLgatqwR3AlZJ+b2+w3aRxlaS/WqlOVDcB82vsRklXN/MbI7J9LnB/TVwg6Z4BEbjGd5D0UwtoTIBtzwXurfHzJD2Q7x6Q7YT8MbBNRbHI9kHABkmpy0azPQzI9iHAUuAUSR/aDjMT3W/ARElrGqBHgFOB14EZRYJ3isZTs7l18i6gZcBxwJOSZtuO31eBo4BHJZ0m23sAYcsYYJKk5ba3A54pNk2TlJP1bEBEIcR1wLXNWtv7AyuA1HFCgC4Dbk40kqa3HI4FtpL082ip66plHSpRxeflAXoROBq4SNJdgzaNFNEIQPOA+HwpQF8DuXwHS/rgPwaaBMTn2gA1xd0J2CLFA9ZLmrUp9G5F/ByQmoVckaPve/RuFxfYvojxs6R8DzPb35WjcZIiTUPMdu5WyBQhzvePDdCvtXE8sA6YWfcnlO0Cyrqxkj4ZMH98ZeZlYEfgi16GbC8HDsg9kPTCaDXalHnbxwLPAysDFKk5H7hN0qWb4mi0tbZvBS6JJAXoGCCRfAuMb/cT29GzXo5HM9snR3KarFQ/+xzYuZct21GEKEMUYr6kdM4oQGr1FDBH0uMjAdmeDLxd2nmEpHdtXwykA3zZU4Zyeg7wIBAViAytth0FjhIvlZR+M9Bsb16NMtfjTCAiHX0M+3LQxQ3QZkC64tTSpynAL0Bax8N96XyjEGe1m2EJaQDTAdKNQ7CsnZH20e5HUYf3gN2AMPEESV913JPOflSZ2R14tt4YUZxDJeX3337UmO196jQB/QGI4D7U10lPqvXLJG0ogNT5LOAWYFwRa0r7rnW9GXYBnqjnVfx8VvULMz9q0lismlh9aA6wVx0gpJgt6Zt2EINeQalZWHN7X+rSW5r2HYlKJG1bACyU9Hd/ygcBpaARxzy7Qoq0ksOA1KBtqWEKHxKltpGl6V217UpdP8jM3IuqRV460a/YukZUq7avFK3zak37H0KkLqAlwOkVyUaQEa5Rb8p2og2d8+hMD5osqWHoUNbVhjDvMWBeE8loIC3WBixvjWF7/wHz6cXkWW68eQAAAABJRU5ErkJggg=="/></g></g>
     </symbol>
   </svg>
 </body>

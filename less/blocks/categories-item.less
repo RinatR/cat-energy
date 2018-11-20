@@ -24,16 +24,11 @@
   border-radius: 50%;
   background-color: #68b738;
 
-  img {
+  svg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  img[alt="Набор массы"] {
-    width: 67px;
-    height: 28px;
   }
 }
 
@@ -46,7 +41,6 @@
 }
 
 .categories-item__content {
-  padding-bottom: 23px;
   margin-bottom: 20px;
   border-bottom: 1px solid #dadada;
 }
@@ -69,8 +63,8 @@
     position: relative;
     padding-top: 81px;
     padding-left: 52px;
-    padding-right: 62px;
     padding-bottom: 62px;
+    padding-right: 56px;
   }
 
   .categories-item__title {
@@ -79,7 +73,6 @@
   }
 
   .categories-item__content {
-    width: 371px;
     border-bottom: 0;
   }
 
@@ -109,17 +102,40 @@
 @media @desktop-width {
   .categories-item {
     width: 570px;
+    margin-bottom: 0;
+  }
+
+  .categories-item__header {
+    position: relative;
+    margin-bottom: 75px;
   }
 
   .categories-item__icon {
-    top: 47px;
-    left: 52px;
+    top: 50%;
+    left: 0;
     width: 100px;
     height: 100px;
+    margin-right: 0;
+    transform: translateY(-50%);
 
-    img {
-      width: 70px;
-      height: 97px;
+    &--slim {
+      svg {
+        width: 70px;
+        height: 97px;
+      }
+    }
+
+    &--gain {
+      svg {
+        width: 134px;
+        height: 56px;
+      }
     }
   }
+
+  .categories-item__title {
+    margin-left: 216px;
+  }
+
+
 }
