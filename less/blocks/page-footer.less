@@ -13,3 +13,28 @@
     padding: 64px 30px;
   }
 }
+
+@media @desktop-width {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 64px 110px;
+  }
+
+  .page-footer__htmlacademy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    span {
+      font-family: "Arial MT", sans-serif;
+      font-size: 16px;
+      line-height: 16px;
+      color: @text-color-base;
+    }
+
+    svg {
+      margin-left: 23px;
+    }
+  }
+}
