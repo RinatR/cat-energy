@@ -65,6 +65,12 @@
     padding-left: 52px;
     padding-bottom: 62px;
     padding-right: 56px;
+
+    &:last-child {
+      .categories-item__content {
+        width: 340px;
+      }
+    }
   }
 
   .categories-item__title {
@@ -73,6 +79,7 @@
   }
 
   .categories-item__content {
+    width: 370px;
     border-bottom: 0;
   }
 
@@ -91,9 +98,18 @@
     height: 200px;
     transform: translateY(-50%);
 
-    img {
-      width: 140px;
-      height: 194px;
+    &--slim {
+      svg {
+        width: 140px;
+        height: 194px;
+      }
+    }
+
+    &--gain {
+      svg {
+        width: 268px;
+        height: 112px;
+      }
     }
   }
 }
