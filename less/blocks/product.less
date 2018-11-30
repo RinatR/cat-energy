@@ -1,8 +1,25 @@
 .product {
   position: relative;
   padding: 25px 0;
-  border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
+
+  &:first-child {
+    border-top: 1px solid #ededed;
+  }
+
+  &--additional {
+    padding-top: 14px;
+    padding-bottom: 17px;
+
+    .product__name,
+    .product__description {
+      margin-left: 0;
+    }
+
+    .product__description {
+      margin-bottom: 16px;
+    }
+  }
 }
 
 .product__image {
@@ -48,3 +65,12 @@
   line-height: 16px;
   color: @text-color-base;
 }
+
+.product__property {
+  &:last-child {
+    .product__property-value {
+      text-transform: uppercase;
+    }
+  }
+}
+

@@ -236,22 +236,8 @@
           </div>
           <div class="additional-products">
             <h2 class="section-title--medium">Дополнительные товары</h2>
-            <div class="additional-products__inner">
-              <div class="additional-product">
-                <div class="product__name">
-                  <a class="product__link" href="#">Питьевая вода</a>
-                </div>
-                <div class="product__description">
-                  <ul class="product__property-list">
-                    <li class="product__property">
-                      <span class="product__property-name">5 литров</span>
-                      <span class="product__property-value">50 р.</span>
-                    </li>
-                  </ul>
-                </div>
-                <a class="btn btn--order" href="#">Заказать</a>
-              </div>
-              <div class="additional-product">
+            <div class="products">
+              <div class="product product--additional">
                 <div class="product__name">
                   <a class="product__link" href="#">Сахарозаменитель</a>
                 </div>
@@ -259,13 +245,27 @@
                   <ul class="product__property-list">
                     <li class="product__property">
                       <span class="product__property-name">1 упаковка</span>
+                      <span class="product__property-value">100 р.</span>
+                    </li>
+                  </ul>
+                </div>
+                <a class="btn btn--order" href="#">Заказать</a>
+              </div>
+              <div class="product product--additional">
+                <div class="product__name">
+                  <a class="product__link" href="#">Питьевая вода</a>
+                </div>
+                <div class="product__description">
+                  <ul class="product__property-list">
+                    <li class="product__property">
+                      <span class="product__property-name">5 литров</span>
                       <span class="product__property-value">50 р</span>
                     </li>
                   </ul>
                 </div>
                 <a class="btn btn--order" href="#">Заказать</a>
               </div>
-              <div class="additional-product">
+              <div class="product product--additional">
                 <div class="product__name">
                   <a class="product__link" href="#">Молоко</a>
                 </div>
@@ -279,7 +279,7 @@
                 </div>
                 <a class="btn btn--order" href="#">Заказать</a>
               </div>
-              <div class="additional-product">
+              <div class="product product--additional">
                 <div class="product__name">
                   <a class="product__link" href="#">Витамины</a>
                 </div>
@@ -295,11 +295,30 @@
               </div>
             </div>
           </div>
+          <div class="catalog__gift">
+            <svg width="55" height="60"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-gift"></use></svg>
+            <p class="catalog__gift-text">
+              Закажите все <br> и получите чехол для кота в подарок!
+            </p>
+          </div>
         </div>
       </section>
+      <section class="contacts">
+        <div class="contacts__header layout-center">
+          <h3 class="section-title section-title--small">Приглашаем к сотрудничеству дилеров!</h3>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <picture class="contacts__map">
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg" width="1440" height="399">
+          <source media="(min-width: 768px)" srcset="img/map-.png">
+          <img  src="img/map-mobile.jpg" alt="Карта">
+        </picture>
+      </section>
     </main>
-    <footer class="page-footer">
-      <img class="page-footer__logo" src="img/footer-logo.png" alt="Логотип" width="128" height="24">
+    <footer class="page-footer layout-center">
+      <div class="page-footer__logo">
+        <img src="img/footer-logo.png" alt="Логотип" width="128" height="24">
+      </div>
       <div class="social-links">
         <a href="#" class="social-links__link social-links__link--vk">
           <svg  width="30" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"></use></svg>
@@ -335,6 +354,9 @@
     </symbol>
     <symbol id="icon-htmlacademy" width="27" height="34" viewBox="0 0 27 34">
       <g><g transform="translate(-1303 -2719)"><image width="27" height="34" transform="translate(1303 2719)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAYAAACuoaIwAAADSUlEQVRIS7VWS1IbMRDtlquAHeQEcITcIOQEkBPEWYzKu8QnID4BsHONF5mcIHACyAlCbuCcIGQHQyGlXiM5bVmasSmizdgaTX9ev34tJrWGw+Hezs7Oa2w55/DcY+Z959wB9pj5UJ/Hb+/9NZ7GmLn3/hcR3RpjbrB3d3d30zTNbfyGq6q6YmYYE4P/aSGQOVtrfcbBrfdeomNmPP/g8GAwmGNvOp1ej0YjyfLx8fEgBLvrvRdUmFlQSe0unBlj3hLRfDqdisGXWKPRSBBzzl1JEDGzuq75JRzkbEQfGzurqmrIzCdENK7r+mKdADd2VlUV6nCqGQkmDgaDD33Qr+0M7bC9vX3qvR+GLCbGmMY595GIPsW9tm3PNM11xms5s9bCGCDby2WRZAsGj2ezWZNC2+kMtHbOnRIRoAM7O+tjrT0GxGBeaHI4ldbByjrLQdYFTyaDz0QEeKE8zf39/RjQrjgjokk82Fd49E+JFHjnvT8JNYZUwS6y/tdnIcpeyHAOEgctZOZJh1NdCjG/6DNk8/Dw8K7EqIRdgAvEQeTndV3jf3ZZa3+E2i9nlituQRFgHOw7Cn03N8ag32QCYAWSfdECv8gMBVW9dNa27aSUZZgUh+Gbn6HW0MELY8x56EEwVDIPKCxrY0L5rr45ZuYjRQIY3FVNDuUvs1ELcdA/MEiaGX2m+waZScGZLxWUC8TxzWw2wxQp95l6+Y2IvhPRfoxWR6qDISI0r8yxuJ7j7Dhk9ZWI3gciSN+0bdtsbW2BjVEbl3i0kbNQO0xiUQMiOiMi3C9EJ0s0f1ZmgW2o17kx5k1CBNiE0+LaKLMgrOgRZHHhvb9kZmSJ2qBG2C9dkFZY3DtiIMqqLrFf8OyCMtufK87atn2Va+JkZol2xnGia5S2R3wXgv4traKucrjbTXLDDwcTukdbxcZX3wCJp0uutXYxg7DRpY8JtEVJy9xXpAxyfcMMCpMZehZXpz7mqJgEE49AL8cYRUt3xYxSd8KkHWZgXpkE2YtpCi3oHqJbjJDoKBFvbBdnXPEWnIx3sa31MXNfkfdd07v3yp2LnJnR6KhvlK5i5hrqXmfxsL5DKgMizHVdQzt719rOYElDpyHt9RIO/AWaHaF5kXr8AQAAAABJRU5ErkJggg=="/></g></g>
+    </symbol>
+    <symbol id="icon-gift" width="55" height="60" viewBox="0 0 55 60">
+      <g><g transform="translate(-133 -2747)"><image width="55" height="60" transform="translate(133 2747)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA8CAYAAADCHCKFAAAE0UlEQVRoQ+2baaxdUxTHf3/zVKTmmCpCaEgRH6rGkKBUoipRQYJKxBRaGnyp8AUxfmgTFS0RhA9VSQmNELToFyIiCBFTJbTmeV7yr31eznvuO2ef+27lXs5KXvLu3Xutvaa9115rrysaQkSMBy4ATgMmAZsBnwGrgMXAMknRkCwRIeAU4HxgCrAD8DPwOvAocI+kL5rQNcFsiIjpwN3A9hVIK82gpHdzCUfEPkkxR1TgfA5cKMmCZkG2cBFhjS4qUX0VeBpYC+wPnApsl8a/BqZLeq6Oi4g4BlgKbJvm2jr+/BawI3AccGiJzixJ9pBayBIuIg4AXgE2Ab4Fzpa0rEw9IjYHbgDmABsAPwHTJD07GhcRcSzwOGDcP4HbgXmSjDsEETENeBDYGvgFOEjS23XS5QpnTdoyvwNHSXq5guEZwANpL34HTJb05sj5ETEx7dNxieGzJC2poHsY8AKwEbBE0uljFi4i7GprkjXmS7qsjmhEWBFm1BZ8BzhE0g8FXkRsCdit900WmyHpsQy684FLgD+AneoOmFrLRcRJwBNp4SlVVhvhSlcBt6TvFki6tCRcwaS/mivp1jrBPB4Rtt5Lae5USU9V4eUIdy5wbyIyXtJXmYyYthc/3nz5eJe0KiImJwY97gPphNzQkcJQEQ7Ok3TfWIU7E3goEdlL0gc5wiVN7wl4v20BrJR0ZESsAHzk/whMlPRhQ3rF+t6jBV8dSeRYzoH6tYSdfQyXXHAecH36vNCxKv1/nSSfrtkQEecA9yeESZIc4EeFHOF8KFhbuwM+fk3011yOImKrhF/EQKPatSZI+r4BHZ+SPoQOBD5O+A4f3QuX3Oty4M5Exa5gf28i4DXAjSUurpV0UwPBNk4XCFvOMFtSwU+1cOn2MQvYdZSZGwK7lcYcGoYF2hpGHfx3Kc35NMW2XPkc5H1bKeCTFHM74XtskW8xigjfKG7LXWWA5l1p4Xyjt1ZWA88MEPOjseq7qL1sjYUr0pM5ku4YdOEiYna6o1IWLmuT9rvwEXEFsM5IrXD9bq0yf63lBslareVyrjT9btH/5Z77TwZxX4JdAHXSWFuK63e3BFwqdJK81kG8XOsYAN6zWZy7LlmNCGfHLro65SnSHhdbXQroFewMbJpSHac8vQKXMOx5Bqc7/lssaeGwTDwiJgDvp4muGNeW23I5jAi7/NHA85LsOj2BVEZ0XdUwrMbTCtcLFbeW60KLrVumU7M9ULrwHoeb9rRsqrh2z7V7rqnPlOa3e64L5bV7rsOeeyQ9WXWhz44ofqF1nuW8sfJFtOGC+wFnNL04N1yjL6ZnZwXO5X7rIct+hPRTmDsRsh8dM9b3251zujblaZPVDHcZNqWNc0019nf9x91KbZmhzee68J42n+tSae2es+sM4p5z33XR91x5/fIVyd2thosk3dWNq3TCWY9x7mJgQVpzXLmf7B+NbRHhpjE3qSyXdOIACLc89XSuluTmuyHoJJwbzq5OM3r2Zrc+LFduqAFuluQGukrh/KMI91cWWngReBIY6lHu0ppuA94beA9wG/BYwD3SU4HDE5GPgIMlfVkpnAdTq737mvcYCwf/Eq4FO1nSGyPXG7WZNCK2Sb8RmJk07lysX8A5oT3gYfd5SfqmE2N/AeBpIu8IinsIAAAAAElFTkSuQmCC"/></g></g>
     </symbol>
   </svg>
 </body>

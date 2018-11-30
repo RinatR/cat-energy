@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 62px;
+  border-bottom: 1px solid #dadada;
 }
 
 .social-links__link {
@@ -10,5 +14,24 @@
 
   &--facebook {
     margin-right: 0;
+
+    svg {
+      width: 10px;
+      height: 19px;
+    }
+  }
+
+  &--instagram {
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &--vk {
+    svg {
+      width: 22px;
+      height: 12px;
+    }
   }
 }
