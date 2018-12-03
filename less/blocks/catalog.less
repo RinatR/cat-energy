@@ -1,7 +1,13 @@
+.catalog {
+  .section-title {
+    margin-bottom: 156px;
+  }
+}
 .catalog__gift {
   position: relative;
   min-height: 289px;
   background-image: url("/img/gift-photo-mobile.jpg");
+  background-repeat: no-repeat;
 
   svg {
     position: absolute;
@@ -19,4 +25,11 @@
   font-weight: 400;
   color: #ffffff;
   text-align: center;
+}
+
+@media @tablet-width {
+  .catalog__gift {
+    min-height: 200px;
+    background-image: url("/img/gift-photo-tablet.jpg");
+  }
 }
