@@ -123,18 +123,18 @@
     justify-content: flex-end;
     padding: 0;
 
-    &:before {
-      position: absolute;
-      right: -110px;
-      top: -54px;
-      width: 680px;
-      height: 696px;
-      background-image: url("../img/intro-bg-desktop.jpg");
-      background-position: 100% 0;
-      background-repeat: no-repeat;
-      content: "";
-      z-index: -1;
-    }
+    // &:before {
+    //   position: absolute;
+    //   right: -110px;
+    //   top: -54px;
+    //   width: 680px;
+    //   height: 696px;
+    //   // background-image: url("../img/intro-bg-desktop.jpg");
+    //   background-position: 100% 0;
+    //   background-repeat: no-repeat;
+    //   content: "";
+    //   z-index: -1;
+    // }
   }
 
   .menu__item {
@@ -142,15 +142,13 @@
     background-color: transparent;
 
     &:first-child {
-      margin-right: auto;
+     order: 1;
     }
   }
 
   .menu__link {
     font-size: 20px;
     line-height: 25px;
-    color: #ffffff;
-
   }
 }
 

@@ -142,3 +142,36 @@
   }
 }
 
+@media @desktop-width {
+  .product {
+    width: 245px;
+
+    &--additional {
+      width: 895px;
+      min-height: 71px;
+      padding: 0;
+      margin-bottom: -1px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      border-left: 0;
+      border-right: 0;
+
+      .product__name,
+      .product__description {
+        margin-bottom: 0;
+      }
+
+      .product__name {
+        width: 245px;
+        align-self: center;
+      }
+
+      .product__description {
+        width: 285px;
+      }
+    }
+  }
+
+}
+

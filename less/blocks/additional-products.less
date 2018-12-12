@@ -20,6 +20,30 @@
   }
 }
 
+.additional-products__gift {
+  position: relative;
+  min-height: 289px;
+  background-image: url("/img/gift-photo-mobile.jpg");
+  background-repeat: no-repeat;
+
+  svg {
+    position: absolute;
+    top: 65px;
+    left: 113px;
+  }
+}
+
+.additional-products__gift-text {
+  width: 159px;
+  margin: 0 auto;
+  padding-top: 190px;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
 @media @tablet-width {
 
   .additional-products {
@@ -56,4 +80,45 @@
       }
     }
   }
+
+  .additional-products__gift {
+    min-height: 200px;
+    background-image: url("/img/gift-photo-tablet.jpg");
+  }
+
+  .additional-products__gift-text {
+    padding-top: 75px;
+    margin-left: 426px;
+  }
 }
+
+@media @desktop-width {
+  .additional-products__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .additional-products__gift {
+    width: 245px;
+    min-height: 281px;
+    background-image: url("/img/gift-photo-mobile.jpg");
+
+     svg {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .additional-products__gift-text {
+    padding-top: 190px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
