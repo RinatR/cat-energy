@@ -87,7 +87,7 @@
     background-color: #f2f2f2;
     box-sizing: border-box;
 
-    &:last-child {
+    &:nth-child(7) {
       margin-bottom: 0;
     }
 
@@ -147,6 +147,11 @@
 @media @desktop-width {
   .product {
     width: 245px;
+
+    &:nth-child(5),
+    &:nth-child(6) {
+      margin-bottom: 0;
+    }
 
     &--additional {
       width: 895px;
