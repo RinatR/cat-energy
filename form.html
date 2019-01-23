@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cat-Energy: Подбор программы</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="page-header">
+      <ul class="menu menu--closed">
+        <li class="menu__item">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип" width="33" height="38">
+          </picture>
+          <img class="menu__item-logo" src="img/logo-mobile-header.svg" alt="Логотип" width="101" height="18">
+          <button class="menu__toggle menu__toggle--closed">
+            <svg  width="24" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-hamburger"></use></svg>
+            <svg width="18" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg>
+          </button>
+        </li>
+        <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+        <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог продукции</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Подбор программы</a></li>
+      </ul>
+    </header>
+    <main class="main-content">
+      <section class="program-selection">
+        <div class="layout-center">
+          <h1 class="section-title">Подбор программы</h1>
+          <form class="program-selection-from" action="/echo" method="post">
+            <fieldset class="program-selection-form__block">
+              <div class="program-selection-form__control">
+                <label class="program-selection-form__label" for="name">Имя*:</label>
+                <input class="program-selection-form__input" type="text" id="name" required placeholder="Барсик">
+              </div>
+              <div class="program-selection-form__control">
+                <label class="program-selection-form__label" for="weight">Вес(кг)*:</label>
+                <input class="program-selection-form__input" type="text" id="weight" required placeholder="7">
+              </div>
+              <div class="program-selection-form__control">
+                <label class="program-selection-form__label" for="age">Возраст(лет):</label>
+                <input class="program-selection-form__input" type="text" id="age" placeholder="7">
+              </div>
+            </fieldset>
+            <fieldset class="program-selection-form__block">
+              <div class="program-selection-form__control">
+                <input class="program-selection-form__radio" type="radio" id="slim" value="slim" name="impression" checked>
+                <label class="program-selection-form__label" for="slim">Похудение</label>
+              </div>
+              <div class="program-selection-form__control">
+                <input class="program-selection-form__radio" type="radio" id="gain" value="gain" name="impression">
+                <label class="program-selection-form__label" for="gain">Набор массы</label>
+              </div>
+              <div class="program-selection-form__control">
+                <input class="program-selection-form__radio" type="radio" id="dontknow" value="dontknow" name="impression">
+                <label class="program-selection-form__label" for="dontknow">Не знаю(нужен ваш совет)</label>
+              </div>
+            </fieldset>
+            <fieldset class="program-selection-form__block">
+              <h2 class="program-selection-form__title">Контактная данные(владельца кота)</h2>
+              <div class="program-selection-form__inner">
+                <div class="program-selection-form__control">
+                  <label class="program-selection-form__label" for="email">E-mail*:</label>
+                  <input type="email" id="email" placeholder="kuklachev@gmail.com">
+                </div>
+                <div class="program-selection-form__control">
+                  <label class="program-selection-form__label" for="phone">Телефон*:</label>
+                  <input type="phone" id="phone" placeholder="8 (960) 900-60-90">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="program-selection-form__block">
+              <h2 class="program-selection-form__title">Комментарий</h2>
+              <textarea class="program-selection-form__textarea" name="descripton" id="descripton" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </fieldset>
+            <fieldset class="program-selection-form__block">
+              <h2 class="program-selection-form__title">Дополнительно:</h2>
+              <div class="program-selection-form__inner">
+                <div class="program-selection-form__control">
+                  <input class="program-selection-form__checkbox" type="checkbox" name="sugar" id="sugar" checked>
+                  <label class="program-selection-form__label" for="devil">Сахарозаменитель</label>
+                </div>
+                <div class="program-selection-form__control">
+                  <input class="program-selection-form__checkbox" type="checkbox" name="water" id="water">
+                  <label class="program-selection-form__label" for="park">Питьеваяв вода</label>
+                </div>
+                <div class="program-selection-form__control">
+                  <input class="program-selection-form__checkbox" type="checkbox" name="milk" id="milk">
+                  <label class="program-selection-form__label" for="mount">Молоко</label>
+                </div>
+                <div class="program-selection-form__control">
+                  <input class="program-selection-form__checkbox" type="checkbox" name="vitamins" id="vitamins">
+                  <label class="program-selection-form__label" for="rocks">Витамины</label>
+                </div>
+              </div>
+            </fieldset>
+            <input class="btn program-selection-form__btn" type="submit" value="Отправить заявку">
+            <span class="feedback-form__legend">* - обязательные поля</span>
+          </form>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__header layout-center">
+          <h3 class="section-title section-title--small">Приглашаем к сотрудничеству дилеров!</h3>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <div class="contacts__map">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/map-desktop.jpg">
+            <img  src="img/map-mobile.jpg" alt="Карта">
+        </picture>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer layout-center">
+      <div class="page-footer__logo">
+        <img src="img/footer-logo.png" alt="Логотип" width="128" height="24">
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-links__link social-links__link--vk">
+          <svg  width="22" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"></use></svg>
+        </a>
+        <a href="#" class="social-links__link social-links__link--instagram">
+          <svg  width="23" height="23"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use></svg>
+        </a>
+        <a href="#" class="social-links__link social-links__link--facebook">
+          <svg  width="14" height="28"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use></svg>
+        </a>
+      </div>
+      <div class="page-footer__htmlacademy">
+        <span>HTML Academy</span>
+        <svg  width="27" height="34"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-htmlacademy"></use></svg>
+      </div>
+    </footer>
+  </div>
+  <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-hamburger" width="24" height="18" viewBox="0 0 24 18">
+      <g><g transform="translate(-276 -221)"><image width="24" height="18" transform="translate(276 221)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAAPUlEQVQ4T2NUUlL6z0BDwEhzC2joeLDRjKMWEAqBYRBENE+mNLeAUCRRKj8MIpnSICCkfxgEEc2TKa0tAABLDAhxoukRYgAAAABJRU5ErkJggg=="/></g></g>
+    </symbol>
+    <symbol id="icon-close" width="18" height="18" viewBox="0 0 18 18">
+      <g><g transform="translate(-279 -23)"><image width="18" height="18" transform="translate(279 23)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAnUlEQVQ4T7XUsQ3CMBAF0JcJ2IaKmgqxDVOwDhUtVGzDBuiKSJHxOTYK7nJKXpz7zk0444IT3sbWDjdcJzxwwAvHASyQO/Z4BrQs9GJfzwQUawSr3jtDvVj6wiW0hjV3XUIZFvW5sdU+1qAaFrVIJw0jg0osrpuJ/h0qG/vTp9XSGW52K+Lu+HtO9+qB7EHmuZD+IiNIim06RjYZbB9f6VZTRPtDJgAAAABJRU5ErkJggg=="/></g></g>
+    </symbol>
+    <symbol id="icon-vk" width="22" height="24" viewBox="0 0 22 24">
+      <g><g transform="translate(-650 -2725)"><image width="22" height="24" transform="translate(650 2725)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAQCAYAAAABOs/SAAAD30lEQVRIS5VVXWhcRRT+vntrikYkG6S1iyIVjVittiqWopZorYrUGrWhYhWU7J27KQYMiEqkukVt/cMoot2ZuRDFB39rn3zog/HFGq2l1FpQLBKpMZLWh1CMa9jsHJnlXrmNq6XzdO+ZM+f75pzvnGGpVFochuHNzrmFyC0ROZAkySFvUkqdBeAlAHcBKAIIUtcGgJ8AvGaM2Zk/XyqVloZheI1z7uy8HcBfc3Nzn1EpNQlgybzN5q+IbLTW7lJKPQOg4m0kPwTwW7p/DoDrAVzinFuSJMmUt8dxvExEDgI4o1VcAOMe+JhnAaBHRJx3DMOwzTn3MYCZYrG4fGJi4rwwDHeKyHoAjxtjXs4CRlH0EMmRIAhuqFare9MMvQ9go4j0hGH4R0rSOedOkPRxCx74SQA7SN6vtX4vC6iU6gfwFoAtWRqVUlMiMmat7ZkPLCIrrbUH4zi+VkT2kXxHa/1w/sZxHG8SEU9qOwcHB8+cmZk5AqDe3t6+bHh4uOadK5XKgsnJyW8BLK7X65eNjIwcV0r59E0bY7pbAU9PT3/X2dn5hYhcGQRBV7Va/TXn10VyH4BjtVptJdOaPCAi7wJ42hjzbO7WNwEYJblba32PByZ5Qmu9JhdwC8k3ReRSkr0AngPwhDHGi7G5+vv7C41GYwzABUEQrKpWq4ebwF4zURR9RXK5c+7yJEnGc+CvAhgkuVVEBgHsNcZsaFGSbQC2Avi8WCzeWqlUmnrp7e1t6+jo2EOym+R9WusPmoA55itI7heRUWvtbV7U2cFCofApgFtSkQxZa3dk58rl8nXOua/T/x/q9foaX5YcsTcAPALgKWPM9sz+D3CqxucBDInIo9ba1zOngYGBhbOzs48B8O2zzRjzZ140SqmSiFxM8hVjzO/ZXqlUOj8IgqMAdhtj7s2fmQ/s+86z9314o7X2m7zz6X774ZQC/xgEwe15sZ0EnArhokajsR9AzTm3KkmSidMFzPtHUbSZ5NsAplLwwyfVOO8cx/E6EfF1Peqc6z4VeBzHAyIyRHKs0Wj0ZxMsi5nG84PDkbxDaz32rxvnxHY3yY8AHHfObU6SZLTVzZVSftz+AuBnAEv9OGxFVil1NYA9ANpIrv5PYA8Sx/FaEfGzuVNEPONha63vx6bi/YqiyBP8BMB6kgtExJP1mbozSZLv52XyKhH5kuSh/wX2h8rl8iIReVFEHvRjHIBX7YHsoQDQBWA1yS6t9ZEoijaQ9KM3ILkr9Yd/pTwxAOsALDolcMa4r6/vwjAMNwHw43IFgHPT12cGwIgxZiDX21c45/zkWutTO69E4yRf+Bs6pM6DNjdlMQAAAABJRU5ErkJggg=="/></g></g>
+    </symbol>
+    <symbol id="icon-fb" width="14" height="28" viewBox="0 0 14 28">
+      <g><g transform="translate(-760 -2719)"><image width="14" height="28" transform="translate(760 2719)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAcCAYAAABRVo5BAAABsklEQVQ4T+2TP2gUQRTGv2+WOwxpJGBvYaFF4NqQ4iKohf+7EMiRC8u8XVHQxl6sLU4QuZ0pPCxShEC0CCIpNFVImqTS2t7iKrlqX9hwe+zu7WGRNtPtm/fb75t53xA1KwzDBWPMC5JPANwCMFdtY7UgIrcB7ABYAPAbwDHJYd6nqm0ArRIYhuGNIAhOAIxUdd17/7364yiKeqr6sgSKyGcA6wCWnHNHdceYArvd7pVms/kXwKFz7m4RiuN4OU3Ta1mNZKiqDyeK1toWyRNVfe29f5eD1to2yZ8zL8da+5jkV1Vd9d5v540i8gHAc5IPSP7L6xNFEXkKYFdV73vvvxUU90guO+euFlUpIm/GhZsAVmsUM5stAL0qqKUC+SxJkn7B6j6AO1NnFJEM/GSMeZttjkaj4WAwmAy80+nMB0HQyMFGo/GR5FpmVUm+T5LkVd3capI1ALBxMRDAKcmD8YC3+v3+ca4URVEIYLGQ1XtZ8M8Vi3ZUddN7n9k5X9baL+NXUnI9mWMcxytpmv6YAbacc9dLt59/XIK8vJyLJmffGPOrEOpHAIL/Rm7Gm/xTBc8AyR9QoujZ7IkAAAAASUVORK5CYII="/></g></g>
+    </symbol>
+    <symbol id="icon-instagram" width="23" height="23" viewBox="0 0 23 23">
+      <g><g transform="translate(-708 -2722)"><image width="23" height="23" transform="translate(708 2722)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAACnElEQVRIS7WVT2wMcRTHv+832QonIhGhKImIcHIUGnV0c9P/a9uZ2TlQbtzq5KjpZWfe1NptFYmEm6MSXF1oxIX6z0HiJMx25slrZmVtzXZL+jvMJDNvPu/Ne9/3HiE9juNsAHAWQD+AfQBy9Xdt3GsAXgKYBTDJzN/1G9KL53l74ji+l0LnReQREX1pA1o32QKgG8ABdWJZ1olSqfSK0oifAthJRCNBENxcBfQPU9d1e0XkKoC3AA4p/AKAy0TU9z/gupfUwQ0AFxX+TNPDzAf/JWLHcfoA+ABuM/OIMhzHeQ5AFB7pr4Rh6GXBC4XCNsuyuoloq4h8JqKHzPxJ7V3XvSMiJwH8YOb1+sy27ZKmWOEC4BIzjzfD8/n8xo6OjgkAQ/Xipzb6zTSAMSLaKyLjRHQ3CALNtzqcEJGxTHgKfpwqYCZJkkoul1uo1Wpdxpg8gEEA81EUHalUKt8aA1sRbtt2lYiGiGgwCILrzX/luu6AiMwAqDKzOvt9WsKLxeL2JEneEVE1CILTWbVwXfeaiAwvLi52lsvljw2KyU6Lbdv9RKTRHmfmuSy44zg9AO6LyEAYhtqdS6dl5I7jnANwxRiz2/f9hSx4sVjsSpLkNYDzzKyFXxlu2/YgEU0bY3p833/QAn4sSZK5VUU+OjraaYzRFq4wc6FFWsoA8saYHb7vf2gr8rTLVAmqiN4wDG81O7Bt+xQR6RyaYWbtg/bUolae522K4/gJgP0AVBVVy7LexHG8i4iGAaiKXkRRdHjVOm9wMJnO+KXxnB7t0Nkois40g5vVsuJs0RoQUQ8RbRaRryIyNzU19T6rFo2z5b+m4t8cNE7FNZ3nujvXZhOlhVu2Q40xP7Ny2vw8SZJ1RHR02Q6tG67F9v8F0NSxcJvCqK8AAAAASUVORK5CYII="/></g></g>
+    </symbol>
+    <symbol id="icon-htmlacademy" width="27" height="34" viewBox="0 0 27 34">
+      <g><g transform="translate(-1303 -2719)"><image width="27" height="34" transform="translate(1303 2719)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAYAAACuoaIwAAADSUlEQVRIS7VWS1IbMRDtlquAHeQEcITcIOQEkBPEWYzKu8QnID4BsHONF5mcIHACyAlCbuCcIGQHQyGlXiM5bVmasSmizdgaTX9ev34tJrWGw+Hezs7Oa2w55/DcY+Z959wB9pj5UJ/Hb+/9NZ7GmLn3/hcR3RpjbrB3d3d30zTNbfyGq6q6YmYYE4P/aSGQOVtrfcbBrfdeomNmPP/g8GAwmGNvOp1ej0YjyfLx8fEgBLvrvRdUmFlQSe0unBlj3hLRfDqdisGXWKPRSBBzzl1JEDGzuq75JRzkbEQfGzurqmrIzCdENK7r+mKdADd2VlUV6nCqGQkmDgaDD33Qr+0M7bC9vX3qvR+GLCbGmMY595GIPsW9tm3PNM11xms5s9bCGCDby2WRZAsGj2ezWZNC2+kMtHbOnRIRoAM7O+tjrT0GxGBeaHI4ldbByjrLQdYFTyaDz0QEeKE8zf39/RjQrjgjokk82Fd49E+JFHjnvT8JNYZUwS6y/tdnIcpeyHAOEgctZOZJh1NdCjG/6DNk8/Dw8K7EqIRdgAvEQeTndV3jf3ZZa3+E2i9nlituQRFgHOw7Cn03N8ag32QCYAWSfdECv8gMBVW9dNa27aSUZZgUh+Gbn6HW0MELY8x56EEwVDIPKCxrY0L5rr45ZuYjRQIY3FVNDuUvs1ELcdA/MEiaGX2m+waZScGZLxWUC8TxzWw2wxQp95l6+Y2IvhPRfoxWR6qDISI0r8yxuJ7j7Dhk9ZWI3gciSN+0bdtsbW2BjVEbl3i0kbNQO0xiUQMiOiMi3C9EJ0s0f1ZmgW2o17kx5k1CBNiE0+LaKLMgrOgRZHHhvb9kZmSJ2qBG2C9dkFZY3DtiIMqqLrFf8OyCMtufK87atn2Va+JkZol2xnGia5S2R3wXgv4traKucrjbTXLDDwcTukdbxcZX3wCJp0uutXYxg7DRpY8JtEVJy9xXpAxyfcMMCpMZehZXpz7mqJgEE49AL8cYRUt3xYxSd8KkHWZgXpkE2YtpCi3oHqJbjJDoKBFvbBdnXPEWnIx3sa31MXNfkfdd07v3yp2LnJnR6KhvlK5i5hrqXmfxsL5DKgMizHVdQzt719rOYElDpyHt9RIO/AWaHaF5kXr8AQAAAABJRU5ErkJggg=="/></g></g>
+    </symbol>
+    <symbol id="icon-gift" width="55" height="60" viewBox="0 0 55 60">
+      <g><g transform="translate(-133 -2747)"><image width="55" height="60" transform="translate(133 2747)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA8CAYAAADCHCKFAAAE0UlEQVRoQ+2baaxdUxTHf3/zVKTmmCpCaEgRH6rGkKBUoipRQYJKxBRaGnyp8AUxfmgTFS0RhA9VSQmNELToFyIiCBFTJbTmeV7yr31eznvuO2ef+27lXs5KXvLu3Xutvaa9115rrysaQkSMBy4ATgMmAZsBnwGrgMXAMknRkCwRIeAU4HxgCrAD8DPwOvAocI+kL5rQNcFsiIjpwN3A9hVIK82gpHdzCUfEPkkxR1TgfA5cKMmCZkG2cBFhjS4qUX0VeBpYC+wPnApsl8a/BqZLeq6Oi4g4BlgKbJvm2jr+/BawI3AccGiJzixJ9pBayBIuIg4AXgE2Ab4Fzpa0rEw9IjYHbgDmABsAPwHTJD07GhcRcSzwOGDcP4HbgXmSjDsEETENeBDYGvgFOEjS23XS5QpnTdoyvwNHSXq5guEZwANpL34HTJb05sj5ETEx7dNxieGzJC2poHsY8AKwEbBE0uljFi4i7GprkjXmS7qsjmhEWBFm1BZ8BzhE0g8FXkRsCdit900WmyHpsQy684FLgD+AneoOmFrLRcRJwBNp4SlVVhvhSlcBt6TvFki6tCRcwaS/mivp1jrBPB4Rtt5Lae5USU9V4eUIdy5wbyIyXtJXmYyYthc/3nz5eJe0KiImJwY97gPphNzQkcJQEQ7Ok3TfWIU7E3goEdlL0gc5wiVN7wl4v20BrJR0ZESsAHzk/whMlPRhQ3rF+t6jBV8dSeRYzoH6tYSdfQyXXHAecH36vNCxKv1/nSSfrtkQEecA9yeESZIc4EeFHOF8KFhbuwM+fk3011yOImKrhF/EQKPatSZI+r4BHZ+SPoQOBD5O+A4f3QuX3Oty4M5Exa5gf28i4DXAjSUurpV0UwPBNk4XCFvOMFtSwU+1cOn2MQvYdZSZGwK7lcYcGoYF2hpGHfx3Kc35NMW2XPkc5H1bKeCTFHM74XtskW8xigjfKG7LXWWA5l1p4Xyjt1ZWA88MEPOjseq7qL1sjYUr0pM5ku4YdOEiYna6o1IWLmuT9rvwEXEFsM5IrXD9bq0yf63lBslareVyrjT9btH/5Z77TwZxX4JdAHXSWFuK63e3BFwqdJK81kG8XOsYAN6zWZy7LlmNCGfHLro65SnSHhdbXQroFewMbJpSHac8vQKXMOx5Bqc7/lssaeGwTDwiJgDvp4muGNeW23I5jAi7/NHA85LsOj2BVEZ0XdUwrMbTCtcLFbeW60KLrVumU7M9ULrwHoeb9rRsqrh2z7V7rqnPlOa3e64L5bV7rsOeeyQ9WXWhz44ofqF1nuW8sfJFtOGC+wFnNL04N1yjL6ZnZwXO5X7rIct+hPRTmDsRsh8dM9b3251zujblaZPVDHcZNqWNc0019nf9x91KbZmhzee68J42n+tSae2es+sM4p5z33XR91x5/fIVyd2thosk3dWNq3TCWY9x7mJgQVpzXLmf7B+NbRHhpjE3qSyXdOIACLc89XSuluTmuyHoJJwbzq5OM3r2Zrc+LFduqAFuluQGukrh/KMI91cWWngReBIY6lHu0ppuA94beA9wG/BYwD3SU4HDE5GPgIMlfVkpnAdTq737mvcYCwf/Eq4FO1nSGyPXG7WZNCK2Sb8RmJk07lysX8A5oT3gYfd5SfqmE2N/AeBpIu8IinsIAAAAAElFTkSuQmCC"/></g></g>
+    </symbol>
+  </svg>
+</body>
+</html>
+
