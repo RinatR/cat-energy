@@ -31,7 +31,7 @@
       <section class="program-selection">
         <div class="layout-center">
           <h1 class="section-title">Подбор программы</h1>
-          <form class="program-selection-from" action="/echo" method="post">
+          <form class="program-selection-form" action="/echo" method="post">
             <fieldset class="program-selection-form__block">
               <div class="program-selection-form__control">
                 <label class="program-selection-form__label" for="name">Имя*:</label>
@@ -65,11 +65,11 @@
               <div class="program-selection-form__inner">
                 <div class="program-selection-form__control">
                   <label class="program-selection-form__label" for="email">E-mail*:</label>
-                  <input type="email" id="email" placeholder="kuklachev@gmail.com">
+                  <input class="program-selection-form__input"type="email" id="email" placeholder="kuklachev@gmail.com">
                 </div>
                 <div class="program-selection-form__control">
                   <label class="program-selection-form__label" for="phone">Телефон*:</label>
-                  <input type="phone" id="phone" placeholder="8 (960) 900-60-90">
+                  <input class="program-selection-form__input" type="phone" id="phone" placeholder="8 (960) 900-60-90">
                 </div>
               </div>
             </fieldset>
@@ -164,3 +164,39 @@
 </body>
 </html>
 
+<div class="parent">
+  <div class="form-block">
+    <label for="email">E-mail</label>
+  <input type="email" id="email" placeholder="kuklachev@gmail.com">
+  </div>
+  <div class="form-block">
+    <label for="email">Description</label>
+  <input type="email" id="email" placeholder="kuklachev@gmail.com">
+  </div>
+   <div class="form-block">
+    <label for="email">Lorem, ipsum dolor sit amet consectetur adipisicing</label>
+  <input type="email" id="email" placeholder="kuklachev@gmail.com">
+  </div>
+
+</div>
+
+
+.parent {
+  width: 600px;
+  padding: 20px 10px;
+  background-color: lightblue;
+}
+
+.form-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;;
+}
+
+label {
+  flex-grow: 2;
+  margin-right: 10px;
+}
+input {
+  flex-grow: 1;
+}
