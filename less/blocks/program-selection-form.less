@@ -58,8 +58,15 @@
   }
 
   &:nth-child(3) {
+
+
     .program-selection-form__input {
       width: 196px;
+      padding-right: 40px;
+    }
+
+    .program-selection-form__control {
+      position: relative;
     }
   }
 
@@ -116,6 +123,8 @@
 }
 
 .program-selection-form__block-title {
+  display: inline-block;
+  position: relative;
   margin-bottom: 30px;
   font-size: 24px;
   line-height: 24px;
@@ -182,4 +191,16 @@
   font-size: 14px;
   line-height: 16px;
   color: @text-color-base;
+}
+
+.program-selection-form__input-icon {
+  position: absolute;
+
+  &--email {
+    right: 16px;
+  }
+
+  &--phone {
+    right: 13px;
+  }
 }
