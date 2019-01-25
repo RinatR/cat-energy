@@ -35,11 +35,11 @@
             <fieldset class="program-selection-form__block">
               <div class="program-selection-form__control">
                 <label class="program-selection-form__label" for="name">Имя*:</label>
-                <input class="program-selection-form__input" type="text" id="name" required placeholder="Барсик">
+                <input class="program-selection-form__input" type="text" id="name" required placeholder="Барсик" required>
               </div>
               <div class="program-selection-form__control">
                 <label class="program-selection-form__label" for="weight">Вес(кг)*:</label>
-                <input class="program-selection-form__input" type="text" id="weight" required placeholder="7">
+                <input class="program-selection-form__input" type="text" id="weight" required placeholder="7" required>
               </div>
               <div class="program-selection-form__control">
                 <label class="program-selection-form__label" for="age">Возраст(лет):</label>
@@ -61,45 +61,45 @@
               </div>
             </fieldset>
             <fieldset class="program-selection-form__block">
-              <h2 class="program-selection-form__title">Контактная данные(владельца кота)</h2>
+              <h2 class="program-selection-form__block-title">Контактная данные(владельца кота)</h2>
               <div class="program-selection-form__inner">
                 <div class="program-selection-form__control">
                   <label class="program-selection-form__label" for="email">E-mail*:</label>
-                  <input class="program-selection-form__input"type="email" id="email" placeholder="kuklachev@gmail.com">
+                  <input class="program-selection-form__input"type="email" id="email" placeholder="kuklachev@gmail.com" required>
                 </div>
                 <div class="program-selection-form__control">
                   <label class="program-selection-form__label" for="phone">Телефон*:</label>
-                  <input class="program-selection-form__input" type="phone" id="phone" placeholder="8 (960) 900-60-90">
+                  <input class="program-selection-form__input" type="phone" id="phone" placeholder="8 (960) 900-60-90" required>
                 </div>
               </div>
             </fieldset>
             <fieldset class="program-selection-form__block">
-              <h2 class="program-selection-form__title">Комментарий</h2>
+              <h2 class="program-selection-form__block-title">Комментарий</h2>
               <textarea class="program-selection-form__textarea" name="descripton" id="descripton" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="program-selection-form__block">
-              <h2 class="program-selection-form__title">Дополнительно:</h2>
+              <h2 class="program-selection-form__block-title">Дополнительно</h2>
               <div class="program-selection-form__inner">
                 <div class="program-selection-form__control">
                   <input class="program-selection-form__checkbox" type="checkbox" name="sugar" id="sugar" checked>
-                  <label class="program-selection-form__label" for="devil">Сахарозаменитель</label>
+                  <label class="program-selection-form__label" for="sugar">Сахарозаменитель</label>
                 </div>
                 <div class="program-selection-form__control">
                   <input class="program-selection-form__checkbox" type="checkbox" name="water" id="water">
-                  <label class="program-selection-form__label" for="park">Питьеваяв вода</label>
+                  <label class="program-selection-form__label" for="water">Питьевая вода</label>
                 </div>
                 <div class="program-selection-form__control">
                   <input class="program-selection-form__checkbox" type="checkbox" name="milk" id="milk">
-                  <label class="program-selection-form__label" for="mount">Молоко</label>
+                  <label class="program-selection-form__label" for="milk">Молоко</label>
                 </div>
                 <div class="program-selection-form__control">
                   <input class="program-selection-form__checkbox" type="checkbox" name="vitamins" id="vitamins">
-                  <label class="program-selection-form__label" for="rocks">Витамины</label>
+                  <label class="program-selection-form__label" for="vitamins">Витамины</label>
                 </div>
               </div>
             </fieldset>
             <input class="btn program-selection-form__btn" type="submit" value="Отправить заявку">
-            <span class="feedback-form__legend">* - обязательные поля</span>
+            <span class="program-selection-form__legend">* - обязательные поля</span>
           </form>
         </div>
       </section>
@@ -163,40 +163,3 @@
   </svg>
 </body>
 </html>
-
-<div class="parent">
-  <div class="form-block">
-    <label for="email">E-mail</label>
-  <input type="email" id="email" placeholder="kuklachev@gmail.com">
-  </div>
-  <div class="form-block">
-    <label for="email">Description</label>
-  <input type="email" id="email" placeholder="kuklachev@gmail.com">
-  </div>
-   <div class="form-block">
-    <label for="email">Lorem, ipsum dolor sit amet consectetur adipisicing</label>
-  <input type="email" id="email" placeholder="kuklachev@gmail.com">
-  </div>
-
-</div>
-
-
-.parent {
-  width: 600px;
-  padding: 20px 10px;
-  background-color: lightblue;
-}
-
-.form-block {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;;
-}
-
-label {
-  flex-grow: 2;
-  margin-right: 10px;
-}
-input {
-  flex-grow: 1;
-}
