@@ -1,5 +1,4 @@
 .program-selection-form {
-  width: 280px;
   padding: 0;
   margin: 0;
 }
@@ -15,7 +14,6 @@
   display: flex;
   align-items: center;
   margin-bottom: 14px;
-  max-width: 280px;
 
   &:last-child {
     margin-bottom: 0;
@@ -123,7 +121,6 @@
 }
 
 .program-selection-form__block-title {
-  display: inline-block;
   position: relative;
   margin-bottom: 30px;
   font-size: 24px;
@@ -136,7 +133,10 @@
   padding: 15px;
   box-sizing: border-box;
   text-transform: uppercase;
+  background-color: #ffffff;
+  outline: none;
   resize: none;
+  border: 1px solid #cdcdcd;
 }
 
 .program-selection-form__checkbox {
@@ -202,5 +202,71 @@
 
   &--phone {
     right: 13px;
+  }
+}
+
+@media @tablet-width {
+  .program-selection-form {
+    padding: 0 38px;
+    padding-bottom: 72px;
+  }
+
+  .program-selection-form__block {
+    max-width: 100%;
+
+    &:nth-child(2) {
+      padding-left: 28px;
+      border: 1px solid #cdcdcd;
+
+      .program-selection-form__control {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &:nth-child(5) {
+      .program-selection-form__inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .program-selection-form__control {
+       width: 50%;
+      }
+    }
+  }
+
+  .program-selection-form__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .program-selection-form__textarea {
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .program-selection-form__btn {
+    display: inline-block;
+    width: 283px;
+    margin-right: 61px;
+  }
+
+  .program-selection-form__legend {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .program-selection-form__block-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .program-selection-form__input {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
