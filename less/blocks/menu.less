@@ -54,7 +54,7 @@
   text-decoration: none;
   color: @text-color-second;
 
-  &:hover {
+  &--active {
     &:after {
     position: absolute;
     bottom: -9px;
@@ -64,6 +64,14 @@
     background-color: #68b738;
     content: "";
     }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
   }
 }
 

@@ -77,6 +77,19 @@
   border: 1px solid #cdcdcd;
   background-color: #ffffff;
   box-sizing: border-box;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 }
 
 .program-selection-form__radio {
@@ -218,6 +231,30 @@
 
   &--phone {
     right: 13px;
+  }
+}
+
+.program-selection-form__input,
+.program-selection-form__textarea {
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+}
+
+input[type="email"] {
+  &:focus {
+    + .program-selection-form__input-icon {
+      fill: #68b738;
+    }
   }
 }
 
