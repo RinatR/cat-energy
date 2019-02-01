@@ -79,16 +79,10 @@
   box-sizing: border-box;
   opacity: 0.5;
 
-  &:hover {
-    opacity: 1;
-  }
-
   &:focus {
-    border: 2px solid #444444;
-  }
-
-  &:invalid {
-    border: 2px solid #ff8282;
+    border: 2px solid black;
+    margin: -1px;
+    opacity: 1;
   }
 }
 
@@ -113,6 +107,7 @@
     border-radius: 50%;
     content: "";
   }
+
   &:after {
     display: none;
     position: absolute;
@@ -125,7 +120,24 @@
     border-radius: 50%;
     content: "";
   }
+
+  &:hover {
+    &:before {
+      border-color: #bababa;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &:before,
+    &:after {
+      opacity: 0.3;
+    }
+  }
 }
+
+
 
 .program-selection-form__radio:checked + .program-selection-form__label {
   &:after {
@@ -165,6 +177,11 @@
   outline: none;
   resize: none;
   border: 1px solid #cdcdcd;
+
+  &:focus {
+    border: 2px solid black;
+    margin: -1px;
+  }
 }
 
 .program-selection-form__checkbox {
@@ -201,6 +218,21 @@
     border-top: 0;
     content: "";
   }
+
+  &:hover {
+    &:before {
+      border-color: #bababa;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &:before,
+    &:after {
+      opacity: 0.3;
+    }
+  }
 }
 
 .program-selection-form__checkbox:checked + .program-selection-form__label {
@@ -234,29 +266,13 @@
   }
 }
 
-.program-selection-form__input,
-.program-selection-form__textarea {
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &:focus {
-    border: 2px solid #444444;
-  }
-
-  &:invalid {
-    border: 2px solid #ff8282;
-  }
-}
-
-input[type="email"] {
-  &:focus {
-    + .program-selection-form__input-icon {
-      fill: #68b738;
-    }
-  }
-}
+// input[type="email"] {
+//   &:focus {
+//     + .program-selection-form__input-icon {
+//       fill: #68b738;
+//     }
+//   }
+// }
 
 @media @tablet-width {
   .program-selection-form {
@@ -390,7 +406,7 @@ input[type="email"] {
       .program-selection-form__inner {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
       }
 
@@ -398,7 +414,7 @@ input[type="email"] {
         margin-bottom: 0;
 
         &:first-child {
-          margin-right: 80px;
+          // margin-right: 79px;
 
           .program-selection-form__input {
             width: 462px;
@@ -407,7 +423,7 @@ input[type="email"] {
 
         &:nth-child(2) {
           .program-selection-form__input {
-            width: 500px;
+            width: 498px;
           }
         }
       }
