@@ -49,6 +49,13 @@
       content: "затрачено времени";
     }
   }
+
+  &--cost {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    border: none;
+  }
 }
 
 
@@ -82,7 +89,25 @@
       font-weight: 400;
       background-color: #ffffff;
     }
+
+    &--cost {
+      width: 192px;
+      margin-left: auto;
+      margin-right: 0;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+
+
+      span {
+        display: inline-block;
+        margin-left: 62px;
+        margin-top: 11px;
+      }
+    }
   }
+
+
 }
 
 @media @desktop-width {
@@ -101,6 +126,19 @@
       font-size: 11px;
       background-color: #f4f4f4;
     }
+
+    &--cost {
+      width: auto;
+      margin-top: 62px;
+
+      span {
+        margin: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
   }
 
   .example-results__text {
@@ -108,18 +146,8 @@
   }
 
   .example-results__list {
+    justify-content: flex-start;
     margin-bottom: 62px;
-  }
-
-  .example-results__cost {
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-
-    span {
-      display: inline-block;
-      margin-left: 62px;
-    }
   }
 }
 
